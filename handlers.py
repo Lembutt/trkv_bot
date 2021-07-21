@@ -1,7 +1,7 @@
 from config import ADMINS
 from main import dp, bot
 from aiogram.types import Message
-from market_api import Market
+from utils.market_api import Market
 
 @dp.message_handler(commands=['start'])
 async def hello_message(message: Message):
