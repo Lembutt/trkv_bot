@@ -50,4 +50,5 @@ class ItemModel:
                            f"Слотов: {self.slots}\n" \
                            f"ЦЗС торговец: {int(self.traderPrice) / int(self.slots)}\n" \
                            f"ЦЗС барахолка {int(self.avg24hPrice) / int(self.slots)}\n" \
+                           f"ТМ: {self.link}\n" \
                            f"Вики: {self.wikiLink}\n"
