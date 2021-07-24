@@ -11,7 +11,7 @@ async def hello_message(message: Message):
     if message.from_user.id not in ADMINS:
         return 0
     await message.answer(f'Ну че, здорова, {message.from_user.first_name} {message.from_user.last_name}\n\nЩа к барыгам, короче, а потом по бабам:)')
-
+    items = await Market.get_all_items()
 
 @dp.message_handler(commands=['check'])
 async def start_check_list(message: Message):
